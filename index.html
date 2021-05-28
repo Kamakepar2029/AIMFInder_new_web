@@ -32,6 +32,7 @@
 <title>AIMFinder</title>
 <div class="menu__menu" id="navbar">
 <div class="menu">
+	<styu onclick="setvisible_or_not();">|||</styu>
 <a href="#">Главная</a>
 <a href="#about">О приложении</a>
 <a href="#download">Скачать</a>
@@ -90,11 +91,34 @@ var sticky = navbar.offsetTop;
 
 // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
 function myFunction() {
-  if (window.pageYOffset >= sticky) {
+  if (window.pageYOffset >= sticky || window.pageYOffset == 0) {
     navbar.classList.add("sticky")
   } else {
     navbar.classList.remove("sticky");
   }
 }
-	</script>
+
+function setvisible_or_not(){
+	let meop = document.getElementsByClassName('menu')[0];
+	if (meop.id == 'menu_open'){
+		let meop = document.getElementsByClassName('menu')[0];
+		meop.id = 'menu_close';
+		meop = meop.getElementsByTagName('a');
+		for (let i in meop){
+			let elem = meop[i];
+			elem.className = '';
+		}
+	}else{
+		let meop = document.getElementsByClassName('menu')[0];
+		meop.id = 'menu_open';
+		meop = meop.getElementsByTagName('a');
+		for (let i in meop){
+			let elem = meop[i];
+			elem.className = 'nonedispidf';
+		}
+	}
+}
+
+setvisible_or_not();
+</script>
 </div>

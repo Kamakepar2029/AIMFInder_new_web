@@ -1,4 +1,11 @@
-  body {
+@media screen and (max-width: 600px) {
+	styu {content: "|||";color: white;font-size: 18px;border: 2px solid white;width: 23px;cursor: pointer;}
+	.nonedispidf{
+	display: none !important;
+}
+}
+
+body {
     position: relative;
     background-color: #fff;
     font-family: system-ui;
