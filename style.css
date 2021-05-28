@@ -1,5 +1,14 @@
 @media screen and (max-width: 600px) {
-	styu {content: "|||";color: white;font-size: 18px;border: 2px solid white;width: 23px;cursor: pointer;}
+	styu {
+    content: "|||";
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    border: 2px solid white;
+    width: 30px;
+    cursor: pointer;
+    line-height: 1.6;
+}
 	.nonedispidf{
 	display: none !important;
 }
