@@ -4,6 +4,7 @@
     text-align: center;
     color: white;
     font-size: 18px;
+		display:block !important;
     border: 2px solid white;
     width: 30px;
     cursor: pointer;
@@ -12,6 +13,31 @@
 	.nonedispidf{
 	display: none !important;
 }
+}
+
+styu{
+	display:none;
+}
+
+.top-container {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+	z-index:1000000;
+}
+
+.sticky + .content {
+  padding-top: 102px;
 }
 
 body {

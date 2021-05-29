@@ -8,6 +8,10 @@
 <link rel="stylesheet" href="/csslide.css">
 <div class="header con">
 <title>AIMFinder</title>
+<div class="top-container">
+  <h1>Scroll Down</h1>
+  <p>We made Web Version of AIMFinder</p>
+</div>
 <div class="menu__menu" id="navbar">
 <div class="menu">
 	<styu onclick="setvisible_or_not();">|||</styu>
@@ -72,7 +76,7 @@ var sticky = navbar.offsetTop;
 
 // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
 function myFunction() {
-  if (window.pageYOffset >= sticky || window.pageYOffset == 0) {
+  if (window.pageYOffset >= sticky) {
     navbar.classList.add("sticky")
   } else {
     navbar.classList.remove("sticky");
